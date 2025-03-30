@@ -1,0 +1,35 @@
+cc_test(
+    name = "test_rw_lock",
+    srcs = ["test_rw_lock.cc"],
+    deps = [
+        "@googletest//:gtest",
+        "@googletest//:gtest_main",
+        "@//rwlock:rw_lock",
+    ],
+    visibility = ["//visibility:public"]
+)
+
+cc_test(
+    name = "test_shared_lock",
+    srcs = ["test_shared_lock.cc"],
+    deps = [
+        "@googletest//:gtest",
+        "@googletest//:gtest_main",
+        "@//rwlock:shared_lock",
+        "@//rwlock:unique_lock",
+        "@//rwlock:rw_lock",
+    ],
+    visibility = ["//visibility:public"]
+)
+
+cc_test(
+    name = "test_unique_lock",
+    srcs = ["test_unique_lock.cc"],
+    deps = [
+        "@googletest//:gtest",
+        "@googletest//:gtest_main",
+        "@//rwlock:unique_lock",
+        "@//rwlock:rw_lock",
+    ],
+    visibility = ["//visibility:public"]
+)
