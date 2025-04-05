@@ -1,4 +1,4 @@
-module(name = "read-write-locks")
+module(name = "read_write_locks")
 
 # https://registry.bazel.build/modules/googletest
 bazel_dep(name = "googletest", version = "1.15.2")
