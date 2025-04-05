@@ -2,7 +2,7 @@ cc_library(
     name = "unique_lock",
     hdrs = ["unique_lock.h"],
     deps = [
-        "@//rwlock:rw_lock",
+        ":rw_lock",
     ],
     visibility = ["//visibility:public"],
 )
@@ -11,7 +11,7 @@ cc_library(
     name = "shared_lock",
     hdrs = ["shared_lock.h"],
     deps = [
-        "@//rwlock:rw_lock",
+        ":rw_lock",
     ],
     visibility = ["//visibility:public"],
 )

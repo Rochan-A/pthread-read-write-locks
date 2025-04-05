@@ -4,7 +4,7 @@ cc_test(
     deps = [
         "@googletest//:gtest",
         "@googletest//:gtest_main",
-        "@//rwlock:rw_lock",
+        "//rwlock:rw_lock",
     ],
     visibility = ["//visibility:public"]
 )
@@ -15,9 +15,9 @@ cc_test(
     deps = [
         "@googletest//:gtest",
         "@googletest//:gtest_main",
-        "@//rwlock:shared_lock",
-        "@//rwlock:unique_lock",
-        "@//rwlock:rw_lock",
+        "//rwlock:shared_lock",
+        "//rwlock:unique_lock",
+        "//rwlock:rw_lock",
     ],
     visibility = ["//visibility:public"]
 )
@@ -28,8 +28,8 @@ cc_test(
     deps = [
         "@googletest//:gtest",
         "@googletest//:gtest_main",
-        "@//rwlock:unique_lock",
-        "@//rwlock:rw_lock",
+        "//rwlock:unique_lock",
+        "//rwlock:rw_lock",
     ],
     visibility = ["//visibility:public"]
 )
